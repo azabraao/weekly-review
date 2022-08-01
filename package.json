@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/azabraao/weekly-review/issues"
   },
-  "homepage": "https://github.com/azabraao/weekly-review#readme"
+  "homepage": "https://github.com/azabraao/weekly-review#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
