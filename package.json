@@ -19,5 +19,10 @@
   "homepage": "https://github.com/azabraao/weekly-review#readme",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10"
   }
 }
