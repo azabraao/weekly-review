@@ -1,5 +1,7 @@
-import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-function App() {
-  return <h1>test</h1>;
-}
+const container = document.getElementById("__weekly");
+const root = createRoot(container);
+
+root.render(<App />);
