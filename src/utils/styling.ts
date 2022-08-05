@@ -1,4 +1,4 @@
-import { vars } from "../vars.css";
+import { vars } from "styles/vars.css";
 
 export const classes = (...classes: string[]): string => {
   return classes.join(" ");

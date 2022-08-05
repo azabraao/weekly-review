@@ -1,5 +1,6 @@
 import { Text, TextInput } from "components/atoms";
 import { AddItemButton, ListItem } from "components/molecules";
+import { useWeekTasks } from "contexts/WeekTasks";
 import { memo, useCallback, useState } from "react";
 import { sprinkles } from "styles/sprinkles.css";
 import { classes } from "utils";
@@ -46,20 +47,16 @@ interface QuestionWithItemsProps {
 
 const QuestionWithItems = ({ children }: QuestionWithItemsProps) => {
   const [isAddingItem, setIsAddingItem] = useState<boolean>(false);
-  const [items, setItems] = useState<TypeListItem[]>([]);
+  const { tasks, removeTask, addTask } = useWeekTasks();
 
   const handleAddItem = useCallback(
     (content: string) => {
-      setItems([...items, { content, id: items.length }]);
+      addTask({
+        id: tasks.length,
+        title: content,
+      });
     },
-    [items]
-  );
-
-  const handleRemoveItem = useCallback(
-    (id: number) => {
-      setItems([...items.filter((item) => item.id !== id)]);
-    },
-    [items]
+    [tasks]
   );
 
   return (
@@ -89,8 +86,12 @@ const QuestionWithItems = ({ children }: QuestionWithItemsProps) => {
             flexDirection: "column",
           })}
         >
-          {items.map((item) => (
-            <ListItem key={item.id} item={item} onRemove={handleRemoveItem} />
+          {tasks.map((task) => (
+            <ListItem
+              key={task.id}
+              item={{ id: task.id, content: task.title }}
+              onRemove={removeTask}
+            />
           ))}
         </div>
         {isAddingItem ? (

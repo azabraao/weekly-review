@@ -1,7 +1,7 @@
 import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles";
 import { vars } from "./vars.css";
 
-const responsiveProperties = defineProperties({
+export const responsiveProperties = defineProperties({
   conditions: {
     mobile: {},
     tablet: { "@media": "screen and (min-width: 768px)" },
@@ -21,6 +21,7 @@ const responsiveProperties = defineProperties({
     width: ["fit-content", "100%"],
     maxWidth: ["1000px"],
     height: ["100vh"],
+    border: ["none"],
     borderRadius: vars.borderRadius,
     borderWidth: ["0", "1px", "2px"],
     borderStyle: ["solid"],
@@ -32,8 +33,9 @@ const responsiveProperties = defineProperties({
     cursor: ["pointer"],
     textDecoration: ["none", "line-through"],
     userSelect: ["none", "text"],
-    transition: ["opacity 0.2s ease-in-out"],
+    transition: ["opacity 0.2s ease-in-out", "background 0.2s ease-in-out"],
     opacity: [0, 1],
+    flex: ["1", "2", "3"],
   },
   shorthands: {
     padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],
@@ -53,6 +55,7 @@ const colorModeProperties = defineProperties({
   properties: {
     color: vars.color,
     background: vars.color,
+    backgroundColor: vars.color,
     borderColor: vars.color,
   },
 });

@@ -2,22 +2,21 @@ import { memo } from "react";
 import { sprinkles } from "styles/sprinkles.css";
 import { vars } from "styles/vars.css";
 
-interface TextProps {
+interface ColumnProps {
   children: React.ReactNode;
-  fontSize?: keyof typeof vars.fontSize;
+  flex: keyof typeof vars.flex;
 }
 
-const Text = ({ fontSize = "base", children }: TextProps) => {
+const Column = ({ children, flex }: ColumnProps) => {
   return (
-    <p
+    <div
       className={sprinkles({
-        fontSize,
-        lineHeight: fontSize,
+        flex,
       })}
     >
       {children}
-    </p>
+    </div>
   );
 };
 
-export default memo(Text);
+export default memo(Column);

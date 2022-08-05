@@ -15,6 +15,16 @@ export const vars = createGlobalTheme(":root", {
     "8x": "32px",
     "9x": "36px",
     "10x": "40px",
+    "11x": "44px",
+    "12x": "48px",
+    "13x": "52px",
+    "14x": "56px",
+    "15x": "60px",
+    "16x": "64px",
+    "17x": "68px",
+    "18x": "72px",
+    "19x": "76px",
+    "20x": "80px",
   },
   color: {
     currentColor: "currentColor",
@@ -29,6 +39,11 @@ export const vars = createGlobalTheme(":root", {
 
     cyan: colors.cyan[500],
     "cyan-700": colors.cyan[700],
+  },
+  flex: {
+    "1": "1 1 0%",
+    "2": "2 2 0%",
+    "3": "3 3 0%",
   },
   borderRadius: {
     "0": "0",

@@ -4,3 +4,8 @@ type TypeListItem = {
   content: string;
   id: number;
 };
+
+type Task = {
+  id: number;
+  title: string;
+};

@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { sprinkles } from "styles/sprinkles.css";
 import { levelToFontSize, levelToLineHeight } from "utils";
-import { vars } from "vars.css";
+import { vars } from "styles/vars.css";
 
 interface TitleProps {
   children: React.ReactNode;

@@ -29,7 +29,9 @@ const ChecklistItem = ({ children }: ChecklistItemProps) => {
       })}
       onClick={toggleChecked}
     >
-      <Checkbox checked={isChecked} />
+      <div>
+        <Checkbox checked={isChecked} />
+      </div>
       <span>{children}</span>
     </div>
   );
