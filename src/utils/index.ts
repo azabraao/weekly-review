@@ -1,1 +1,1 @@
-export { levelToFontSize, levelToLineHeight } from "./styling";
+export { levelToFontSize, levelToLineHeight, classes } from "./styling";

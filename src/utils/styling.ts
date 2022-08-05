@@ -1,5 +1,9 @@
 import { vars } from "../vars.css";
 
+export const classes = (...classes: string[]): string => {
+  return classes.join(" ");
+};
+
 export const levelToFontSize = (
   level: HeadingLevel
 ): keyof typeof vars.fontSize => {

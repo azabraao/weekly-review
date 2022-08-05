@@ -1,8 +1,12 @@
 import { Checkbox } from "components/atoms";
 import { memo, useCallback, useState } from "react";
-import { sprinkles } from "sprinkles.css";
+import { sprinkles } from "styles/sprinkles.css";
 
-const ChecklistItem = () => {
+interface ChecklistItemProps {
+  children: React.ReactNode;
+}
+
+const ChecklistItem = ({ children }: ChecklistItemProps) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const toggleChecked = useCallback(() => {
@@ -26,7 +30,7 @@ const ChecklistItem = () => {
       onClick={toggleChecked}
     >
       <Checkbox checked={isChecked} />
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+      <span>{children}</span>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import colors from "tailwindcss/colors";
 export const vars = createGlobalTheme(":root", {
   space: {
     none: "0",
+    0: "0",
     "1x": "4px",
     "2x": "8px",
     "3x": "12px",

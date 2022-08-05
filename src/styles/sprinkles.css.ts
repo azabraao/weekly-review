@@ -18,10 +18,12 @@ const responsiveProperties = defineProperties({
     paddingBottom: vars.space,
     paddingLeft: vars.space,
     paddingRight: vars.space,
-    width: ["100vw", "100%"],
+    width: ["fit-content", "100%"],
     maxWidth: ["1000px"],
     height: ["100vh"],
     borderRadius: vars.borderRadius,
+    borderWidth: ["0", "1px", "2px"],
+    borderStyle: ["solid"],
     fontFamily: vars.fontFamily,
     fontSize: vars.fontSize,
     lineHeight: vars.lineHeight,
@@ -30,6 +32,8 @@ const responsiveProperties = defineProperties({
     cursor: ["pointer"],
     textDecoration: ["none", "line-through"],
     userSelect: ["none", "text"],
+    transition: ["opacity 0.2s ease-in-out"],
+    opacity: [0, 1],
   },
   shorthands: {
     padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],
@@ -49,6 +53,7 @@ const colorModeProperties = defineProperties({
   properties: {
     color: vars.color,
     background: vars.color,
+    borderColor: vars.color,
   },
 });
 

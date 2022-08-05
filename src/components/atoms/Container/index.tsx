@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { sprinkles } from "sprinkles.css";
+import { sprinkles } from "styles/sprinkles.css";
 
 interface ContainerProps {
   children: React.ReactNode;
