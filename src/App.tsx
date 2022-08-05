@@ -29,12 +29,12 @@ const App = () => {
                 Extract tasks based on quarterly goals
               </ChecklistItem>
               <QuestionWithItems>
-                What would this week worth doing?
+                What would be worth doing this week?
               </QuestionWithItems>
               <ChecklistItem>
-                What is really important to do this week?
+                What is really important to be done this week?
               </ChecklistItem>
-              <ChecklistItem>What will you get from this week?</ChecklistItem>
+              <ChecklistItem>What results will this week bring?</ChecklistItem>
               <ChecklistItem>
                 Is it worth investing in some activities while giving up others?
               </ChecklistItem>
