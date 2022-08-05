@@ -26,44 +26,43 @@ const App = () => {
               })}
             >
               <ChecklistItem>
-                Extrair tarefas com base nos objetivos trimestrais
+                Extract tasks based on quarterly goals
               </ChecklistItem>
               <QuestionWithItems>
-                O que faria essa semana valer a pena?
+                What would this week worth doing?
               </QuestionWithItems>
               <ChecklistItem>
-                O que realmente é importante ser feito nessa semana?
+                What is really important to do this week?
               </ChecklistItem>
-              <ChecklistItem>Que resultados me trarão?</ChecklistItem>
+              <ChecklistItem>What will you get from this week?</ChecklistItem>
               <ChecklistItem>
-                Compensa investir em algumas atividades abdicando de outras?
+                Is it worth investing in some activities while giving up others?
               </ChecklistItem>
               <ChecklistItem>
-                Essas atividades vão me levar ao meu propósito pessoal ou ao meu
-                objetivo? O que posso fazer com o que está atrapalhando?
+                These activities will lead me to my personal purpose or my
+                objective? What can I do with what's getting in the way?
               </ChecklistItem>
               <ChecklistItem>
                 <Link
                   target="_blank"
                   href="https://calendar.google.com/calendar/u/0/r"
                 >
-                  Ver agenda
+                  See agenda
                 </Link>
-                . O que está chegando para o qual eu preciso estar preparado?
+                . What is coming that I need to be prepared for?
               </ChecklistItem>
               <ChecklistItem>
-                O que deu errado? O que posso fazer pra próxima semana ser
-                melhor?
+                What went wrong? What can I do to make next week better?
               </ChecklistItem>
               <ChecklistItem>
-                Acessar{" "}
+                Access{" "}
                 <Link
                   href="https://www.rescuetime.com/dashboard"
                   target="_blank"
                 >
                   Rescue Time
                 </Link>{" "}
-                e ver meu dashboard
+                and see my dashboard
               </ChecklistItem>
             </div>
           </Column>
