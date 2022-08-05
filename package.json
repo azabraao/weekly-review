@@ -1,23 +1,24 @@
 {
   "name": "weekly-review",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A weekly review for crushing the upcoming week",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azabraao/weekly-review.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "azabraao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/azabraao/weekly-review/issues"
   },
-  "homepage": "https://github.com/azabraao/weekly-review#readme",
+  "homepage": "https://azabraao.me",
   "dependencies": {
     "@svgr/webpack": "^6.3.1",
     "react": "^18.2.0",
@@ -38,6 +39,7 @@
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.1",
