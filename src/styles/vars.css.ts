@@ -17,6 +17,7 @@ export const vars = createGlobalTheme(":root", {
     "10x": "40px",
   },
   color: {
+    currentColor: "currentColor",
     white: colors.slate[50],
 
     "slate-100": colors.slate[100],
