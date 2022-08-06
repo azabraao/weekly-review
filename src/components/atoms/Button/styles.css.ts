@@ -12,6 +12,7 @@ export const button = style([
     transition: "background 0.2s ease-in-out",
     border: "none",
     cursor: "pointer",
+    fontSize: "base",
   }),
   {
     ":hover": {
