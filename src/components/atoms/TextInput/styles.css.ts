@@ -3,6 +3,7 @@ import { style } from "@vanilla-extract/css";
 
 export const textInput = style([
   sprinkles({
+    fontSize: "base",
     borderRadius: "2x",
     padding: "4x",
     color: {
