@@ -1,4 +1,6 @@
 name: Release
+permissions:
+  contents: write
 on:
   push:
     branches:
@@ -14,12 +16,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-      - name: Install dependencies
-        run: yarn
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install and Build
         run: |
-          git config --global user.email "az.abraao@gmail.com"
-          git config --global user.name "Abraão Azevedo"
-          yarn deploy
+          yarn
+          yarn build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
