@@ -43,6 +43,24 @@ const App = () => {
                 objective? What can I do with what's getting in the way?
               </ChecklistItem>
               <ChecklistItem>
+                What events can I attend this week or in future dates?
+              </ChecklistItem>
+              <ChecklistItem>
+                What trips can I take in future dates?
+              </ChecklistItem>
+              <ChecklistItem>
+                What medical exams do I need to schedule?
+              </ChecklistItem>
+              <ChecklistItem>
+                Which friends or family members should I reach out to?
+              </ChecklistItem>
+              <ChecklistItem>
+                Are there any skills or hobbies I want to develop further?
+              </ChecklistItem>
+              <ChecklistItem>
+                What books or articles would I like to read?
+              </ChecklistItem>
+              <ChecklistItem>
                 <Link
                   target="_blank"
                   href="https://calendar.google.com/calendar/u/0/r"
